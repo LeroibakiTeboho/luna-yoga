@@ -1,0 +1,22 @@
+[
+  {
+    "time": "9:00 AM",
+    "title": "Morning Flow",
+    "description": "Gentle movements to start your day"
+  },
+  {
+    "time": "12:00 PM",
+    "title": "Midday Meditation",
+    "description": "Reset your focus for the afternoon"
+  },
+  {
+    "time": "5:30 PM",
+    "title": "Vinyasa",
+    "description": "Dynamic flow to energize your evening"
+  },
+  {
+    "time": "7:00 PM",
+    "title": "Restorative Yoga",
+    "description": "Deep relaxation for peaceful evenings"
+  }
+]
