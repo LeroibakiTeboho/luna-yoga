@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -39,13 +38,17 @@ export default function LunaYoga() {
   // Smooth scrolling to sections
   const scrollToSection = useCallback((id: string) => {
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: "smooth",
-      });
-    }
+
+    // Use a timeout to ensure the menu closes before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
+    }, 100); // 100ms delay to allow menu to close
   }, []);
 
   const toggleTheme = () => {
